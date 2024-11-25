@@ -29,7 +29,7 @@ jobs:
 
             - name: Test des charges
               run: 
-                  locust -f locustfile.py --users 10000 --spawn-rate 100 --host http://localhost:5000/ --run-time 2m
+                  locust --headless -H http://127.0.0.1:5000 -u 10000 -r 100 --run-time 2m 
             
                     
     
