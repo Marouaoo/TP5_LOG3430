@@ -28,7 +28,7 @@ jobs:
                     sleep 30
 
             - name: Test des charges
-              run: |
+              run: 
                   locust -f locustfile.py --users 10000 --spawn-rate 100 --host http://localhost:5000/ --run-time 2m
             
                     
